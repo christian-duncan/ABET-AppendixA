@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{etoolbox}
+\usepackage{longtable}
+\usepackage{fullpage}
+
+\appendix
+\pretocmd{\section}{%
+  \clearpage
+  \pagenumbering{arabic}%
+  \renewcommand*{\thepage}{\thesection-\arabic{page}}%
+}{}{}
+
+\begin{document}
+
+% Preamble to the syllabi
+\appendix
+\section{Course Syllabi}
+
+This appendix contains recent syllabi for science, mathematics, and computer science courses.
+Note some syllabi were slightly altered in AY 2020-2021 due to restrictions from the global pandemic.
+
+\vspace{2em}
+\noindent{\bfseries \underline{Science Courses}}
+\begin{longtable}{lll}
+  \hspace{1in} & \hspace{3.5in} & \hspace{1in}\kill
+  \underline{\bfseries Course} & \underline{\bfseries Title} & \underline{\bfseries Page}\\
+  BIO101  & General Biology I                 & \pageref{BIO101}\\
+  BIO101L & General Biology I Lab             & \pageref{BIO101L}\\
+  BIO102  & General Biology II                & \pageref{BIO102}\\
+  BIO102L & General Biology II Lab            & \pageref{BIO102L}\\
+  BIO150  & General Biology for Majors        & \pageref{BIO150}\\
+  BIO150L & General Biology for Majors Lab    & \pageref{BIO150L}\\
+  BIO151  & Molecular and Cell Biology and Genetics     & \pageref{BIO151}\\
+  BIO151L & Molecular and Cell Biology and Genetics Lab & \pageref{BIO151L}\\
+  CHE110  & General Chemistry I               & \pageref{CHE110}\\
+  CHE110L & General Chemistry I Lab           & \pageref{CHE110L}\\
+  CHE111  & General Chemistry II              & \pageref{CHE111}\\
+  CHE111L & General Chemistry II Lab          & \pageref{CHE111L}\\
+  PHY121  & University Physics I              & \pageref{PHY121}\\
+  PHY122  & University Physics II             & \pageref{PHY122}
+\end{longtable}
+
+\vspace{2em}
+\noindent{\bfseries \underline{Mathematics Courses}}
+\begin{longtable}{lll}
+  \hspace{1in} & \hspace{3.5in} & \hspace{1in}\kill
+  \underline{\bfseries Course} & \underline{\bfseries Title} & \underline{\bfseries Page}\\
+  MA141  &  Calculus of a Single Variable I   & \pageref{MA141}\\
+  MA205  &  Discrete Math                     & \pageref{MA205}\\
+\end{longtable}
+
+\vspace{2em}
+\noindent{\bfseries \underline{Computer Science Courses}}
+\begin{longtable}{lll}
+  \hspace{1in} & \hspace{3.5in} & \hspace{1in}\kill
+  \underline{\bfseries Course} & \underline{\bfseries Title} & \underline{\bfseries Page}\\
+  CSC110  &  Programming \& Problem Solving      & \pageref{CSC110}\\
+  CSC110L &  Programming \& Problem Solving Lab  & \pageref{CSC110L}\\
+  CSC111  &  Data Structures and Abstraction     & \pageref{CSC111}\\
+  CSC111L &  Data Structures and Abstraction Lab & \pageref{CSC111L}\\
+\end{longtable}
+
+% Biology Sequences
+\newpage
+\input{BIO101}
+\newpage
+\input{BIO101L}
+\newpage
+\input{BIO102}
+\newpage
+\input{BIO102L}
+\newpage
+\input{BIO150}
+\newpage
+\input{BIO150L}
+\newpage
+\input{BIO151}
+\newpage
+\input{BIO151L}
+
+% Chemistry and Physics Sequences
+\newpage
+\input{CHE110}
+\newpage
+\input{CHE110L}
+\newpage
+\input{CHE111}
+\newpage
+\input{CHE111L}
+\newpage
+\input{PHY121}
+\newpage
+\input{PHY122}
+
+% Math Courses
+
+% CSC Courses
+
+% SER Courses
+
+\end{document}
