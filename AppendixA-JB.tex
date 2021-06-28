@@ -1,0 +1,151 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{etoolbox}
+\usepackage{longtable}
+\usepackage{fullpage}
+\usepackage{hyperref}
+
+\appendix
+\pretocmd{\section}{%
+  \clearpage
+  \pagenumbering{arabic}%
+  \renewcommand*{\thepage}{\thesection-\arabic{page}}%
+}{}{}
+
+\begin{document}
+
+% Preamble to the syllabi
+\appendix
+\section{Course Syllabi}
+
+This appendix contains recent syllabi for science, mathematics, and computer science courses.
+Note some syllabi were slightly altered in AY 2020-2021 due to restrictions from the global pandemic.
+
+\vspace{2em}
+\noindent{\bfseries \underline{Science Courses}}
+\begin{longtable}{lll}
+  \hspace{1in} & \hspace{3.5in} & \hspace{1in}\kill
+  \underline{\bfseries Course} & \underline{\bfseries Title} & \underline{\bfseries Page}\\
+  BIO101  & General Biology I                 & \pageref{BIO101}\\
+  BIO101L & General Biology I Lab             & \pageref{BIO101L}\\
+  BIO102  & General Biology II                & \pageref{BIO102}\\
+  BIO102L & General Biology II Lab            & \pageref{BIO102L}\\
+  BIO150  & General Biology for Majors        & \pageref{BIO150}\\
+  BIO150L & General Biology for Majors Lab    & \pageref{BIO150L}\\
+  BIO151  & Molecular and Cell Biology and Genetics     & \pageref{BIO151}\\
+  BIO151L & Molecular and Cell Biology and Genetics Lab & \pageref{BIO151L}\\
+  CHE110  & General Chemistry I               & \pageref{CHE110}\\
+  CHE110L & General Chemistry I Lab           & \pageref{CHE110L}\\
+  CHE111  & General Chemistry II              & \pageref{CHE111}\\
+  CHE111L & General Chemistry II Lab          & \pageref{CHE111L}\\
+  PHY121  & University Physics I              & \pageref{PHY121}\\
+  PHY122  & University Physics II             & \pageref{PHY122}
+\end{longtable}
+
+\vspace{2em}
+\noindent{\bfseries \underline{Mathematics Courses}}
+\begin{longtable}{lll}
+  \hspace{1in} & \hspace{3.5in} & \hspace{1in}\kill
+  \underline{\bfseries Course} & \underline{\bfseries Title} & \underline{\bfseries Page}\\
+  MA141  &  Calculus of a Single Variable I   & \pageref{MA141}\\
+  MA150  &  Integral Calculus With Applications & \pageref{MA150}\\
+  MA151  &  Calculus I & \pageref{MA151}\\
+  MA153  &  Calculus II: Part A & \pageref{MA153}\\
+  MA154  &  Calculus II: Part B & \pageref{MA154}\\
+  MA205  &  Introd. to Discrete Math          & \pageref{MA205}\\
+  MA229  &  Linear Algebra & \pageref{MA229}\\
+  MA285  &  Applied Statistics & \pageref{MA285}\\
+  MA301  &  Foundations of Advanced Mathematics & \pageref{MA301}\\
+  MA305  &  Discrete Mathematics & \pageref{MA305}\\
+  MA318  &  Cryptography & \pageref{MA318}\\
+  MA321  &  Abstract Algebra & \pageref{MA321}\\
+  MA370  &  Number Theory & \pageref{MA370}\\
+\end{longtable}
+
+\vspace{2em}
+\noindent{\bfseries \underline{Computer Science Courses}}
+\begin{longtable}{lll}
+  \hspace{1in} & \hspace{3.5in} & \hspace{1in}\kill
+  \underline{\bfseries Course} & \underline{\bfseries Title} & \underline{\bfseries Page}\\
+  CSC106  &  Introduction to Programming for Engineers & \pageref{CSC106}\\
+  CSC107  &  Structured Programming Techniques   & \pageref{CSC107}\\
+  CSC110  &  Programming \& Problem Solving      & \pageref{CSC110}\\
+  CSC110L &  Programming \& Problem Solving Lab  & \pageref{CSC110L}\\
+  CSC111  &  Data Structures and Abstraction     & \pageref{CSC111}\\
+  CSC111L &  Data Structures and Abstraction Lab & \pageref{CSC111L}\\
+  CSC210  &  Computer Architecture and Organization & \pageref{CSC210}\\
+  CSC215  &  Algorithm Design and Analysis       & \pageref{CSC215}\\
+  CSC240  &  Introduction to Computer Security   & \pageref{CSC240}\\
+  CSC310  &  Operating Systems and Systems Programming & \pageref{CSC310}\\
+  CSC315  &  Theory of Computation (MA315)       & \pageref{CSC315}\\
+  CSC318  &  Cryptography (MA318)                & \pageref{MA318}\\
+  CSC325  &  Database Systems (SER325)           & \pageref{CSC325}\\
+  CSC340  &  Networking and Distributed Processing & \pageref{CSC340}\\
+  CSC345  &  Computer Graphics                   & \pageref{CSC345}\\
+  CSC350  &  Intelligent Systems                 & \pageref{CSC350}\\
+  CSC491  &  Senior Project I                    & \pageref{CSC491}\\
+  CSC492  &  Senior Project II                   & \pageref{CSC492}\\
+  SER120  &  Object-Oriented Design and Programming & \pageref{SER120}\\
+  SER120L &  Object-Oriented Design and Programming Lab & \pageref{SER120L}\\
+  SER210  &  Software Engineering Design and Development & \pageref{SER210}\\
+  SER225  &  Introduction to Software Development & \pageref{SER225}\\
+  SER305  &  Advanced Computational Problem Solving & \pageref{SER305}\\
+  SER360  & Software Engineering in Health Care   & \pageref{SER360}\\
+  CSC375  & Machine Learning (Adv. Topics in Computer Science) & \pageref{CSC375-ML} \\
+  CSC375  & Cloud Computing (Adv. Topics in Computer Science) & \pageref{CSC375-Cloud} \\
+  CSC300  &  \underline{Special Topics}          & Varied \\                       % Will need to add some (if not all) exampls here...
+\end{longtable}
+
+% Biology Sequences
+\newpage
+\input{BIO101}
+\newpage
+\input{BIO101L}
+\newpage
+\input{BIO102}
+\newpage
+\input{BIO102L}
+\newpage
+\input{BIO150}
+\newpage
+\input{BIO150L}
+\newpage
+\input{BIO151}
+\newpage
+\input{BIO151L}
+
+% Chemistry and Physics Sequences
+\newpage
+\input{CHE110}
+\newpage
+\input{CHE110L}
+\newpage
+\input{CHE111}
+\newpage
+\input{CHE111L}
+\newpage
+\input{PHY121}
+\newpage
+\input{PHY122}
+
+% Math Courses
+
+% CSC Courses
+\newpage
+\input{CSC110}
+\newpage
+\input{CSC110L}
+\newpage
+\input{CSC210}
+\newpage
+\input{CSC215}
+\newpage
+\input{CSC315}
+\newpage
+\input{CSC375-ML}
+\newpage
+\input{CSC375-Cloud}
+
+% SER Courses
+
+\end{document}
