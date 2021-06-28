@@ -1,10 +1,10 @@
-\label{CSC350}  % Replace course code with ID - e.g. \label{CSC110}
+\label{CSC399-Systems}  % Replace course code with ID - e.g. \label{CSC110}
 \begin{enumerate}[1.]
 \item Course number and name\\
   {\bfseries
     % Add course number and name
     % --------------------------
-    CSC350, Intelligent Systems
+    CSC399, Systems Programming
   }
   
 \item Credits and contact hours\\
@@ -25,14 +25,14 @@
   {\bfseries
     % Add Textbook info
     % --------------------------
-    {\em Artificial Intelligence: A Modern Approach}, AIMA Third Edition, Stuart Russell and Peter Norvig, 2009
-  }
+    {\em A Practical Guide to Ubuntu Linux (3rd Edition)}, by Mark Sobel.
+    }
 \begin{enumerate}[a.]
 \item Other supplemental materials\\
   {\bfseries
     % List any other supplemental material
     % ------------------------------------
-    None.
+    None. (Instructor will work with student to identify a good C programming book or online source based on their experience.)
   }
 \end{enumerate}
 
@@ -42,7 +42,9 @@
   {\bfseries
     % Add catalog description
     % -----------------------
-Artificial Intelligence is an umbrella topic covering efforts in a variety of fields all searching for one goal: to get computers to perform well at tasks at which humans excel. Topics include fundamental issues in intelligent systems, search and optimization methods, knowledge representation and reasoning, learning, agents, computer vision, natural language processing, pattern recognition, advanced machine learning, robotics, knowledge-based systems, neural networks and genetic algorithms. 
+The purpose of this course is to provide the students with an introduction to system-level programming.
+Although not the primary focus of this course, instruction shall be done
+within the context of C and Linux/FreeBSD.
 }
 
 \item prerequisites or co-requisites\\
@@ -73,23 +75,24 @@ Artificial Intelligence is an umbrella topic covering efforts in a variety of fi
     % --------------------------
     Course Learning Outcomes (the student will be able to):
 \begin{enumerate}[1.]
-\item Recognize problems that may be solved using artificial intelligence and machine learning.
-\item Apply basic AI strategies and algorithms such as knowledge representation techniques, 
-search algorithms, and machine learning techniques to solve problems.
-\item Discuss the major areas and challenges of AI.
-\item Discuss the ethical issues surrounding the use of AI.
+\item To work effectively in a UNIX-style environment.
+\item To explain the basic operations that are performed from the time a computer is turned on until a user is able to execute programs.
+\item To write medium to large C programs for a range of applications.
+\item To use systems tools for C programming.
+\item To write C programs that use the UNIX system call interface.
+\item To write small to medium size scripts, in various scripting languages, for a range of applications. 
 \end{enumerate}
   }
 
 \item explicitly indicate which of the student outcomes listed in Criterion 3 or any other outcomes are addressed by the course.\\
   {\bfseries
     % None
-    C1 (CLO 1, 2)
-    C2 (CLO 1, 2)
+    % C1 (CLO 3, 5, 6)
+    C2 (CLO 3, 4, 5, 6),
     % C3 (CLO 5),
-    C4 (CLO 3, 4),
-    C5 (CLO 2),
-    C6 (CLO 2)
+    % C4 (CLO 4),
+    % C5 (CLO 5)
+    C6 (CLO 3, 4, 5, 6)
   }
 \end{enumerate}
 
@@ -97,13 +100,16 @@ search algorithms, and machine learning techniques to solve problems.
   {\bfseries
     Lecture Topics
     \begin{itemize}
-    \item User agents, reflect (hard-coded) technique
-    \item Unsupervised Learning
-    \item Minimax and Alpha-beta search
-    \item Neural Networks
-    \item Support Vector Machines
-    \item Naive-Bayes Model
-    \item Ethical Issues of Artificial Intelligence
+    \item Using standard Linux desktop user environments, file systems, and tools.
+    \item Using the command line to interact with the Linux Operating system.
+    \item Using advanced shell commands such as piping, I/O redirects, and variable substitution.
+    \item Writing programs in a scripting language (Bash).
+    \item Writing programs in the C programming language, including using pointers and memory management.
+    \item Using standard C libraries for various programming tasks.
+    \item Using various tools to enhance programming, such as makefiles, profilers, lint, and debuggers.
+    \item Examining what happens during program compilation, linking, and loading.
+    \item Interacting directly with the operating system by making system calls for file management, file execution, process control, and interprocess communication.
+    \item Main project: Implement a simple interactive shell (similar to Bash or TCSH)
     \end{itemize}
   }
 \end{enumerate}
